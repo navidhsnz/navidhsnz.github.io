@@ -13,7 +13,7 @@ def send_manual_parameter_tuning():
     rospy.sleep(1)
 
     # Send calibration values (example values: "1.0,1.0,0.3,1")
-    values = "0.6,0.9,0.06,0"  # Replace with actual calibration values as needed
+    values = "0.6,0.9,0,0"  # Replace with actual calibration values as needed
     rospy.loginfo(f"Sending parameters values: {values}")
     pub.publish(values)
     
